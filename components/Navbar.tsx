@@ -8,8 +8,8 @@ import Button from "./Button";
 const navItems = [
   { text: "Features", id: "features" },
   { text: "How It Works", id: "how-it-works" },
-  // { text: "Testimonials", id: "testimonials" },
-  // { text: "FAQ", id: "faq" },
+  { text: "Testimonials", id: "testimonials" },
+  { text: "FAQ", id: "faq" },
 ];
 
 const Navbar = () => {
