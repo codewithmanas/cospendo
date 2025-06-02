@@ -19,13 +19,19 @@ const Navbar = () => {
   useEffect(() => {
     if(typeof window !== undefined) {
         const handleScroll = () => {
-        setIsScrolled(window.scrollY > 10);
-      };
+
+          if(!isScrolled || window.scrollY == 0 ) {
+            setIsScrolled(window.scrollY > 10);
+          }
+
+        };
+
+      handleScroll();
       
       window.addEventListener('scroll', handleScroll);
       return () => window.removeEventListener('scroll', handleScroll);
     }
-  }, []);
+  }, [isScrolled]);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
