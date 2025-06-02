@@ -1,9 +1,9 @@
 import React from "react";
 // import { Button } from "./ui/button";
-import { ArrowRight } from "lucide-react";
-import Button from "./Button";
+import HeroCTA from "./HeroCTA";
 
 const Hero = () => {
+
   return (
     <div className="relative pt-20 pb-24 sm:pt-24 sm:pb-32 bg-gradient-to-br from-gray-50 to-teal-50">
       <div className="container mx-auto px-4 md:px-6">
@@ -30,16 +30,9 @@ const Hero = () => {
               <Button className="text-lg px-8 py-6 bg-transparent border border-teal-500 text-teal-500 hover:bg-teal-50 focus:ring-teal-500 cursor-pointer">
                 See How It Works
               </Button> */}
-              <Button variant="primary" size="lg" className="group cursor-pointer">
-                Get Started Free
-                <ArrowRight
-                  className="ml-2 transition-transform group-hover:translate-x-1"
-                  size={24}
-                />
-              </Button>
-              <Button variant="outline" size="lg" className="cursor-pointer">
-                See How It Works
-              </Button>
+
+              <HeroCTA />
+
             </div>
 
             <div className="mt-8 flex items-center text-gray-500 text-sm">

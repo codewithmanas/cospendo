@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 // import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
 import Button from "./Button";
+import Link from "next/link";
 
 const navItems = [
   { text: "Features", id: "features" },
@@ -51,7 +52,9 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <span className="text-2xl text-teal-500 font-bold">CoSpendo</span>
+            <span className="text-2xl text-teal-500 font-bold">
+              <Link href="/">CoSpendo</Link>
+            </span>
           </div>
 
           {/* Desktop Menu */}
